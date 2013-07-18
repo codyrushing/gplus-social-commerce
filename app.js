@@ -13,6 +13,9 @@ var express = require("express"),
 	io,
 	server = http.createServer(app);
 
+// init based on settings
+require("./settings").boot(app);
+
 // init socket.io
 io = require("./realtime").init(app, server);
 
