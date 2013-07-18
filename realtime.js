@@ -25,7 +25,7 @@ module.exports = {
 			//me.clients[socket.id] = {id : socket.id, nickname : false};
 
 			socket.on("clientEventTest", function(data){
-				socket.emit("serverEventTest", {payload: "hey you said "+data.payload+". I heard that shit"});
+				socket.broadcast.emit("serverEventTest", {payload: "hey you said "+data.payload+". I heard that shit"});
 			});
 
 			socket.on("disconnect", function(){
