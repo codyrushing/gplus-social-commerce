@@ -1,0 +1,14 @@
+{
+  "author": "codyrushing",
+  "name": "gplus-social-commerce",
+  "description": "Google social commerce socket server",
+  "version": "0.0.1",
+  "private": true,
+  "node": "0.8.1",
+  "main": "app.js",
+  "dependencies": {
+    "connect": "latest",
+    "express": ">=3.0",
+    "socket.io":">=0.9.10"
+  }
+}
