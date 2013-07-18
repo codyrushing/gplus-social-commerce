@@ -41,20 +41,8 @@
 <script src="//plus.google.com/hangouts/_/api/v1/hangout.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script>
-<script type="text/javascript">
-  $(function(){
-    var socket = io.connect("http://ec2-23-22-44-238.compute-1.amazonaws.com:80");
+<script type="text/javascript" src="https://dl.dropboxusercontent.com/u/2284644/app-browsing.js"></script>
 
-    socket.on("serverEventTest", function(data){
-      console.log(data.payload);
-    });
-
-    $("button#socket-go").click(function(e){
-      socket.emit("clientEventTest", {payload: $("input[name=\"socket-test\"]").val()});
-    });
-
-  });
-</script>
 
 <h3>Simple Hangout App</h3>
 
