@@ -40,8 +40,8 @@
 
 <script src="//plus.google.com/hangouts/_/api/v1/hangout.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script type="text/javascript" src="https://raw.github.com/codyrushing/gplus-social-commerce/master/js/socket.io.min.js"></script>
-  <script type="text/javascript" src="https://raw.github.com/codyrushing/gplus-social-commerce/master/js/app-browsing.js"></script>
+  <script type="text/javascript" src="http://ec2-23-22-44-238.compute-1.amazonaws.com/public/js/socket.io.min.js"></script>
+  <script type="text/javascript" src="http://ec2-23-22-44-238.compute-1.amazonaws.com/public/js/app-browsing.js"></script>
 
 <h3>Simple Hangout App</h3>
 
