@@ -38,6 +38,39 @@ p.price {
 	right: 0%;
 }
 
+.add-to-bag a {
+	width: 24px;
+	height: 25px;
+	display: block;
+}
+
+.add-to-bag span {
+	display: none;
+}
+
+.msg-add-to-bag {
+	position: absolute;
+	top: 20%;
+	left: 35%;
+	width: 200px;
+	height: 50px;
+	background: #e0e0e0;
+	z-index: 1000;
+	padding: 20px;
+	border: 2px solid #CCC;
+	border-radius: 7px;	
+	display: none;
+}
+
+.msg-add-to-bag p {
+	color: white; 
+	text-shadow: black 0.1em 0.1em 0.2em;
+	margin: 0;
+	text-align: center;
+	font-size: 12pt;
+	line-height: 16pt;
+}
+
 #leftcol, #maincol, #rightcol {
 	min-height: 100%;
 	box-sizing: border-box;

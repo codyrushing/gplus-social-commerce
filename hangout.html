@@ -3,10 +3,11 @@
 <!-- CSS -->
 <link rel="stylesheet" type="text/css" href="public/css/app-hangout.css" />
 <!-- JS -->
-<script src="//plus.google.com/hangouts/_/api/v1/hangout.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script>
-<script type="text/javascript" src="https://dl.dropboxusercontent.com/u/2284644/app-hangout.js"></script>
+<!--<script src="//plus.google.com/hangouts/_/api/v1/hangout.js"></script>-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!--<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script>-->
+<!--<script type="text/javascript" src="https://dl.dropboxusercontent.com/u/2284644/app-hangout.js"></script>-->
+<script type="text/javascript" src="public/js/hangout.js"></script>
 
 <div id="leftcol">
 	<a href="#" class="product-image-thumbnails"><img width="54" height="54" src="http://dyn-images2.hsni.com/is/image/HomeShoppingNetwork/prodthum/jessica-simpson-eclair-strappy-suede-platform-pump-d-20130530162122773~265233.jpg" alt="Jessica Simpson Eclair Strappy Suede Platform Pump" /></a>
@@ -18,6 +19,9 @@
 </div>
 
 <div id="maincol">
+	<div class="msg-add-to-bag">
+		<p>Your item has been added to your shopping bag</p>
+	</div>
 	<div class="product-feature">
 		<img src="http://dyn-images2.hsni.com/is/image/HomeShoppingNetwork/prodfull/jessica-simpson-eclair-strappy-suede-platform-pump-d-20130530162122773~265233.jpg" />
 		<!--<video width="330" controls>
@@ -26,7 +30,7 @@
 		</video>-->
 	</div>
 	<div class="product-info">
-		<div class="add-to-bag"></div>	
+		<div class="add-to-bag"><a href="javascript:void()" title="Add to bag"><span>Add to bag</span></a></div>	
 		<div class="product-description">
 			<h3>Jessica Simpson Jessica Simpson "Eclair" Strappy Suede Platform Pump</h3>
 			<p class="price">$89.00 <span class="strike-through">$110.00</span></p>
