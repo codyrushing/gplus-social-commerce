@@ -34,8 +34,8 @@ p.price {
 	width:24px;
 	height:25px;
 	position: absolute;
-	top: 15px;
-	right: 5%;
+	top: -15px;
+	right: 0%;
 }
 
 #leftcol, #maincol, #rightcol {
