@@ -12,3 +12,18 @@ body > .hangout-button {
 	z-index: 999;
 }
 body > .hangout-button.show { bottom: 0; opacity: 1; }
+
+.product-item.module .hangout-init {
+	display: none;
+	text-align: center;
+	height: 30px;
+	position: absolute;
+	padding: 10px;
+	top: 50%;
+	left: 10px; right: 10px;
+	line-height: 30px;
+	background: blue;
+}
+.product-item.module:hover .hangout-init {
+	display: block;
+}

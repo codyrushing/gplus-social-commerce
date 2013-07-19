@@ -28,6 +28,14 @@ module.exports = {
 				socket.broadcast.emit("serverEventTest", {payload: "hey you said "+data.payload+". I heard that shit"});
 			});
 
+			socket.on("hangoutInitialized", function(data){
+				socket.broadcast.emit("hangoutReady", {ready: true});
+			});
+
+			socket.on("addProductToHangout", function(data){
+				socket.broadcast.emit("addProduct", data);
+			})
+
 			socket.on("disconnect", function(){
 
 			});
