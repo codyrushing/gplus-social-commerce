@@ -1,0 +1,14 @@
+/* CSS goes here */
+body > .hangout-button {
+	position: fixed;
+	height: 30px;
+	line-height: 30px;
+	background: blue;
+	color: #fff;
+	padding: 10px 20px;
+	bottom: 70px; right: 5%;
+	opacity: 0;
+	transition: all .2s linear;
+	z-index: 999;
+}
+body > .hangout-button.show { bottom: 0; opacity: 1; }
