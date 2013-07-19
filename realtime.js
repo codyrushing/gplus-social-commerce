@@ -29,6 +29,7 @@ module.exports = {
 			});
 
 			socket.on("hangoutInitialized", function(data){
+				console.log("initialized");
 				socket.broadcast.emit("hangoutReady", {ready: true});
 			});
 
