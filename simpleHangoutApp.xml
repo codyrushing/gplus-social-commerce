@@ -44,22 +44,27 @@
 <script type="text/javascript" src="https://dl.dropboxusercontent.com/u/2284644/app-browsing.js"></script>
 
 
-<h3>Simple Hangout App</h3>
+<h3>Shop with friends</h3>
 
-<p>
+<div id="carousel-products">
+	<img src="http://dyn-images.hsni.com/is/image/HomeShoppingNetwork/prodfull/jessica-simpson-fonda-platform-pump-d-20130530162122773~268370_304.jpg" />
+</div>
+
+
+<!--<p>
 <input class="button" type="button" value="Show participants!" id="showParticipants" 
     style="visibility:hidden;"
     onClick="showParticipants()"/>
-</p>
+</p>-->
 
 <input name="socket-test" />
 <button id="socket-go">GO</button>
 
-<div id="participantsDiv"></div>
+<!--<div id="participantsDiv"></div>
 
 <hr>
 
-<p><a href="http://developers.google.com/+/hangouts/getting-started">Read the docs</a> to learn more about developing hangouts!</a></p>
+<p><a href="http://developers.google.com/+/hangouts/getting-started">Read the docs</a> to learn more about developing hangouts!</a></p>-->
 
 <script>
 function showParticipants() {
