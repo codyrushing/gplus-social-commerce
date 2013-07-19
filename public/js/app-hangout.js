@@ -44,6 +44,7 @@ gadgets.util.registerOnLoadHandler(init);
   };
   appHangout.prototype = {
     realtime: function(){
+      var me = this;
       this.socket = io.connect("http://ec2-23-22-44-238.compute-1.amazonaws.com:80");
       this.socket.on("serverEventTest", function(data){
         console.log(data.payload);
@@ -56,6 +57,10 @@ gadgets.util.registerOnLoadHandler(init);
         gapi.hangout.data.submitDelta(item);
       });
 
+      this.socket.on("triggerClick", function(data){
+        me.carouselContainer.find("a[data-id=\""+me.linkId+"\"]").click();
+      });
+
     },
     updateCarousel: function(products){
       var prod;
@@ -64,6 +69,7 @@ gadgets.util.registerOnLoadHandler(init);
         var prod = JSON.parse(products[key]);
             link = $("<a>").attr({
               "class": "hangout-products",
+              "data-id": prod.id,
               "data-prodData": products[key],
               "href": "#"
             }),
@@ -123,6 +129,10 @@ gadgets.util.registerOnLoadHandler(init);
         this.thumbsContainer.html(prodData.thumbs);
         this.bindThumbEvents();
       }
+
+      this.socket.emit("carouselClick", {linkId, link.attr("data-id")});
+
+      return false;
     },
     bindThumbEvents: function(){
       var imgContainer = $(".product-feature", this.mainContainer),
@@ -145,7 +155,9 @@ gadgets.util.registerOnLoadHandler(init);
       });
     },
     DOMEvents: function(){
-
+      $('.add-to-bag a').click(function() {
+            $('.msg-add-to-bag').show().delay(3000).fadeOut('slow');
+        });
     },
     gAPIEvents: function(){
       var me = this;

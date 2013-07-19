@@ -50,7 +50,7 @@
 		</video>-->
 	</div>
 	<div class="product-info">
-		<div class="add-to-bag"><a href="javascript:void()" title="Add to bag"><span>Add to bag</span></a></div>	
+		<div class="add-to-bag"><a href="#" title="Add to bag"><span>Add to bag</span></a></div>	
 		<div class="product-description">
 			<h3>Jessica Simpson Jessica Simpson "Eclair" Strappy Suede Platform Pump</h3>
 			<p class="price">$89.00 <span class="strike-through">$110.00</span></p>

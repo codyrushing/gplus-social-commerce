@@ -1,22 +1,25 @@
-/* CSS goes here */
-body > .hangout-button {
-	position: fixed;
-	height: 30px;
-	line-height: 30px;
-	background: blue;
-	color: #fff;
-	padding: 10px 20px;
-	bottom: 70px; right: 5%;
-	opacity: 0;
-	transition: all .2s linear;
-	z-index: 999;
+body > .launch-hangout {
+    position: absolute;
+    bottom: 20px; 
+    right: 10px;
 }
-body > .hangout-button.show { bottom: 0; opacity: 1; }
 
-.add-product-hangout {
-	padding: 10px;
-	height: 30px;
-	line-height: 30px;
-	background: blue;
-	color: #fff;
+body > .launch-hangout span { display: none; }
+
+body > .launch-hangout .hangout-button {
+    /*background: url(https://dl.dropboxusercontent.com/u/2284644/buttons.png) no-repeat 0 0;*/
+    width: 112px;
+    height: 24px;
+    display: block;
+    margin: 0;
+    float:left;
+}
+
+body > .launch-hangout .add-product-hangout {
+    /*background: url(https://dl.dropboxusercontent.com/u/2284644/buttons.png) no-repeat -120px 0;*/
+    height: 24px;    
+    width: 50px;
+    display: block;
+    margin: 0;
+    float: left;
 }

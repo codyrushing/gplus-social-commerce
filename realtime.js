@@ -35,7 +35,11 @@ module.exports = {
 
 			socket.on("addProductToHangout", function(data){
 				socket.broadcast.emit("addProduct", data);
-			})
+			});
+
+			socket.on("carouselClick", function(data){
+				socket.broadcast.emit("triggerClick", data);
+			});
 
 			socket.on("disconnect", function(){
 

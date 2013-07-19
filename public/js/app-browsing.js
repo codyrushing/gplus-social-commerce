@@ -45,7 +45,7 @@
 	},
 	appBrowsing = function(){
 		this.realtime();
-		this.hangoutUrl = "https://hangoutsapi.talkgadget.google.com/hangouts/_/916626761cedfa495ac7f319a7cb7bdfce555542?authuser=0";
+		this.hangoutUrl = "https://hangoutsapi.talkgadget.google.com/hangouts?authuser=0&gid=385760598548";
 		$(document).ready($.proxy(this.DOMEvents, this));
 	};
 
@@ -67,10 +67,6 @@
 			var me = this,
 				urlPieces = window.location.href.split("/"),
 				container = $("#template-product-detail"),
-				addButton = $("<a>").attr({
-					class: "add-product-hangout",
-					href: "#"
-				}).text("Add product to hangout"),
 				productData = {
 					name: $("#product-name", container).text(),
 					id: urlPieces[urlPieces.length-1],
@@ -96,49 +92,32 @@
 				});
 			}
 
-			$("#template-product-detail-product .pricing").append(addButton);
-
-			$(".add-product-hangout").click(function(e){
-				me.socket.emit("addProductToHangout", productData);
-				return false;
-			});
-
-			this.initHangoutButton();
+			this.initButtons(productData);
 
 		},
 		initAddProductButton: function(){
 
 		},
-		initHangoutButton: function(){
-			var hangoutButton = $("<a>").attr({
-					class: "hangout-button",
+		initButtons: function(productData){
+			var me = this,
+				buttonWrapper = $("<div>").addClass("launch-hangout"),
+				hangoutButton = $("<a>").attr({
+					href: this.hangoutUrl,
+					title: "Shop with friends",
 					target: "_blank",
-					href: this.hangoutUrl
-				}).text("start hang out"),
-				isInitializerPage = window.location.href === "http://www.hsn.com/products/sam-edelman-maddox-leather-bootie/6866472";
-			
-			if(!isInitializerPage){
-				hangoutButton.removeAttr("target").removeAttr("href");
-			}
+					class: "hangout-button"
+				}).append("<span>Add to Hangout</span>").appendTo(buttonWrapper),
+				addToHangoutButton = $("<a>").attr({
+					href: "#",
+					title: "Add to hangout",
+					class: "add-product-hangout"
+				}).append("<span>Add to Hangout</span>").appendTo(buttonWrapper);
 
-			hangoutButton.appendTo($("body")).addClass("show");
-			if(this.hangoutIsOpen()){
-				$(".hangout-button").click(function(e){
-					e.preventDefault();
-				})
-			}
-			$(".hangout-button").click(function(e){
-				var sendSocket = function(){
-					me.socket.emit("addProductToHangout", productData);
-				};
-				if(isInitializerPage){
-					me.socket.on("hangoutReady", function(ws){
-						sendSocket();
-					});
-				} else {
-					sendSocket();
-					e.preventDefault();				
-				}
+			$("body").append(buttonWrapper);
+
+			addToHangoutButton.click(function(e){
+				me.socket.emit("addProductToHangout", productData);
+				return false;
 			});
 		},
 		getProductDataFromModule: function(item, callback){
@@ -148,7 +127,6 @@
 					pageUrl: link.attr("href"),
 					productId: $(item).attr("data-product-id")
 				};
-			console.log(link);
 			if($(".actual-price", item).length){
 				productData.price = $(".actual-price", item).html();
 			}
