@@ -30,12 +30,12 @@ p.price {
 }
 
 .add-to-bag {
-	background: url('../img/shopping-bag.gif') no-repeat top left;
+	background: url('https://dl.dropboxusercontent.com/u/2284644/shopping-bag.gif') no-repeat top left;
 	width:24px;
 	height:25px;
 	position: absolute;
 	top: 15px;
-	right: 20px;
+	right: 5%;
 }
 
 #leftcol, #maincol, #rightcol {
@@ -75,26 +75,31 @@ p.price {
 #maincol .product-feature {
 	float: left;
 	width: 52%;
-	margin-right: 4%;
+	margin-right: 6%;
 }
 
 #maincol .product-feature img {
 	width: 100%;
 }
 
+#maincol .product-info {
+	width: 40%;
+	float: left;
+}
+
 #maincol .product-description {
 	float: left;
-	width: 44%;
+	width: 100%;
 	margin: 20px 0;
 }
 
 #maincol .related-products {
 	float: left;
-	width: 43%;
+	width: 100%;
 }
 
 #maincol .related-products img {
-	margin: 0 3px 3px 0;
+	margin: 0 5px 5px 0;
 }
 
 /* RIGHT COL STYLES */
