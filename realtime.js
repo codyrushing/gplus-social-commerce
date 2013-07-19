@@ -3,7 +3,7 @@ var io = require("socket.io"),
 	connect = require("connect");
 
 module.exports = {
-	configure: function(sessionStore){
+	configure: function(){
 		io.configure(function(){
 			io.set("authorization", function(data, accept){
 				// just accept all users for now
