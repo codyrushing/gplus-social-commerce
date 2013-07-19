@@ -38,6 +38,7 @@ module.exports = {
 			});
 
 			socket.on("carouselClick", function(data){
+				console.log("carouselClick happened");
 				socket.broadcast.emit("triggerClick", data);
 			});
 
