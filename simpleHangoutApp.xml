@@ -12,7 +12,7 @@
  * License for the specific language governing permissions and limitations under
  * the License
 -->
-	<ModulePrefs title="Hangout Starter">
+	<ModulePrefs title="Shop with Friends">
 		<Require feature="rpc" />
 		<Require feature="views" />
 		<Require feature="locked-domain" />
@@ -20,90 +20,24 @@
 	<Content type="html"><![CDATA[     
 
 <html>
-<style type="text/css">
-<!--
-.button {
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ddd));
-  background: -moz-linear-gradient(top, #fff, #ddd);  
-  border: 1px solid #bbb;
-}
-
-.button:active {
-	background: -webkit-gradient(linear, left top, left bottom, from(#aaa), to(#333)); 
-	background: -moz-linear-gradient(bottom, #ddd, #aaa); }
-
--->
-</style>
 <body>
-
+<!-- CSS -->
+<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/2284644/app-browsing.css" type="text/css" />
+<!-- JS -->
 <script src="//plus.google.com/hangouts/_/api/v1/hangout.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script>
-<script type="text/javascript" src="https://dl.dropboxusercontent.com/u/2284644/app-browsing.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script>
+<script type="text/javascript" src="https://dl.dropboxusercontent.com/u/2284644/app-hangout.js"></script>
 
+<!--<div id="carousel-products">
+  <img src="http://dyn-images.hsni.com/is/image/HomeShoppingNetwork/prodfull/jessica-simpson-fonda-platform-pump-d-20130530162122773~268370_304.jpg" />
+</div>-->
 
-<h3>Shop with friends</h3>
+<div id="leftcol"></div>
+<div id="maincol"></div>
+<div id="rightcol"></div>
 
-<div id="carousel-products">
-	<img src="http://dyn-images.hsni.com/is/image/HomeShoppingNetwork/prodfull/jessica-simpson-fonda-platform-pump-d-20130530162122773~268370_304.jpg" />
-</div>
-
-
-<!--<p>
-<input class="button" type="button" value="Show participants!" id="showParticipants" 
-    style="visibility:hidden;"
-    onClick="showParticipants()"/>
-</p>-->
-
-<input name="socket-test" />
-<button id="socket-go">GO</button>
-
-<!--<div id="participantsDiv"></div>
-
-<hr>
-
-<p><a href="http://developers.google.com/+/hangouts/getting-started">Read the docs</a> to learn more about developing hangouts!</a></p>-->
-
-<script>
-function showParticipants() {
-  var participants = gapi.hangout.getParticipants();
-
-  var retVal = '<p>Participants: </p><ul>';
-
-  for (var index in participants) {
-    var participant = participants[index];
-
-    if (!participant.person) {
-      retVal += '<li>A participant not running this app</li>';
-    }
-    retVal += '<li>' + participant.person.displayName + '</li>';
-  }
-
-  retVal += '</ul>';
-
-  var div = document.getElementById('participantsDiv');
-
-  div.innerHTML = retVal;
-}
-
-function init() {
-  // When API is ready...                                                         
-  gapi.hangout.onApiReady.add(
-      function(eventObj) {
-        if (eventObj.isApiReady) {
-          document.getElementById('showParticipants')
-            .style.visibility = 'visible';
-        }
-      });
-}
-
-// Wait for gadget to load.                                                       
-gadgets.util.registerOnLoadHandler(init);
-</script>
-</body>
-]]>
+</body>]]>
 </Content>
 </Module>
 

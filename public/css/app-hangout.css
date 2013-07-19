@@ -1,0 +1,10 @@
+/* CSS GOES HERE */
+#leftcol, #maincol, #rightcol {
+	min-height: 100%;
+	box-sizing: border-box;
+	float: left;
+	padding: 10%;
+}
+
+#leftcol, #rightcol { width: 22.5%; background: #ddd; }
+#maincol { width: 55%; background: #eee; }
