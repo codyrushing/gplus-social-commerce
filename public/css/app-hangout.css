@@ -1,10 +1,111 @@
 /* CSS GOES HERE */
+body {
+	color: #70666f;
+	font-size: 10pt;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 10pt;
+	margin: 0 0 10px;
+}
+
+p {
+	margin: 0;
+}
+
+p.price {
+	color: #ee3440;
+	
+}
+
+.strike-through {
+	text-decoration: line-through;
+	color: #70666f;	
+	font-weight: bold;
+}
+
+.add-to-bag {
+	background: url('../img/shopping-bag.gif') no-repeat top left;
+	width:24px;
+	height:25px;
+	position: absolute;
+	top: 15px;
+	right: 20px;
+}
+
 #leftcol, #maincol, #rightcol {
 	min-height: 100%;
 	box-sizing: border-box;
 	float: left;
-	padding: 10%;
+	padding: 4% 2%;
 }
 
-#leftcol, #rightcol { width: 22.5%; background: #ddd; }
-#maincol { width: 55%; background: #eee; }
+#leftcol, #rightcol { width: 17%; background: #fff; }
+#maincol { width: 62%; background: #fff; position: relative; padding: 4% 0; }
+
+/* LEFT COL STYLES */
+
+.product-image-thumbnails {
+	margin: 0 3px 3px 0;
+	outline: none;
+	display: block;
+	color: #fff;
+	background: none;
+	float: left;
+}
+
+.product-image-thumbnails img {
+	border: 2px solid #CCC;
+	border-radius: 3px 3px 3px 3px;
+	height: 54px;
+	width: 54px;
+}
+
+.product-image-thumbnails:hover img, .product-image-thumbnails:active img {
+	border: 2px solid #3F3F3F;
+}
+
+/* MAIN COL STYLES */
+
+#maincol .product-feature {
+	float: left;
+	width: 52%;
+	margin-right: 4%;
+}
+
+#maincol .product-feature img {
+	width: 100%;
+}
+
+#maincol .product-description {
+	float: left;
+	width: 44%;
+	margin: 20px 0;
+}
+
+#maincol .related-products {
+	float: left;
+	width: 43%;
+}
+
+#maincol .related-products img {
+	margin: 0 3px 3px 0;
+}
+
+/* RIGHT COL STYLES */
+
+#rightcol {
+	height: 50%;
+	padding: 4% 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+#rightcol a.hangout-products img {
+	margin: 0 0 20px; 
+}
