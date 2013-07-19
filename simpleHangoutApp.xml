@@ -22,7 +22,7 @@
 <html>
 <body>
 <!-- CSS -->
-<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/2284644/app-browsing.css" type="text/css" />
+<link rel="stylesheet" type="text/css" href="https://dl.dropboxusercontent.com/u/2284644/app-hangout.css" />
 <!-- JS -->
 <script src="//plus.google.com/hangouts/_/api/v1/hangout.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -37,7 +37,8 @@
 <div id="maincol"></div>
 <div id="rightcol"></div>
 
-</body>]]>
+</body>
+]]>
 </Content>
 </Module>
 
