@@ -42,23 +42,29 @@
 	<div class="add-to-bag"></div>
 	<div class="product-feature">
 		<img src="http://dyn-images2.hsni.com/is/image/HomeShoppingNetwork/prodfull/jessica-simpson-eclair-strappy-suede-platform-pump-d-20130530162122773~265233.jpg" />
+		<!--<video width="330" controls>
+		  <source src="http://odv.hsn.com/clips/ipad/67/11226967.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+		</video>-->
 	</div>
-	<div class="product-description">
-		<h3>Jessica Simpson Jessica Simpson "Eclair" Strappy Suede Platform Pump</h3>
-		<p class="price">$89.00 <span class="strike-through">$110.00</span></p>
-		<p class="flex-pay">or 3 FlexPays of <span class="bold">$29.67</span></p>
-		<p class="shipping">Free Shipping</p>
-	</div>
-	<div class="related-products">
-		<a href="#" class="related-product-image-thumbnails"><img src="http://dyn-images2.hsni.com/is/image/HomeShoppingNetwork/prodthum/jessica-simpson-waleo-suede-platform-pump-d-00010101000000~215029_alt2.jpg" /></a>
-		<a href="#" class="related-product-image-thumbnails"><img src="http://dyn-images2.hsni.com/is/image/HomeShoppingNetwork/prodthum/jessica-simpson-celin-studded-leather-platform-sandal-d-2012120412073732~200079_334.jpg" /></a>
-		<a href="#" class="related-product-image-thumbnails"><img src="http://dyn-images2.hsni.com/is/image/HomeShoppingNetwork/prodthum/jessica-simpson-waleo-suede-platform-pump-d-2012120412073732~215029_502.jpg" /></a>
-		<a href="#" class="related-product-image-thumbnails"><img src="http://dyn-images2.hsni.com/is/image/HomeShoppingNetwork/prodthum/echo-metallic-floppy-brim-hat-d-20130404121308777~246912_040.jpg" /></a>
-		<a href="#" class="related-product-image-thumbnails"><img src="http://dyn-images.hsni.com/is/image/HomeShoppingNetwork/prodthum/twiggy-london-woven-tribal-fedora-d-20130322173335487~242826_304.jpg" /></a>
-		<a href="#" class="related-product-image-thumbnails"><img src="http://dyn-images.hsni.com/is/image/HomeShoppingNetwork/prodthum/twiggy-london-spring-sneaker-with-leather-toe-cap-d-20130213170437897~231563.jpg" /></a>
-		<a href="#" class="related-product-image-thumbnails"><img src="http://dyn-images.hsni.com/is/image/HomeShoppingNetwork/prodthum/clever-carriage-hamptons-pom-pom-scarf-d-00010101000000~278723_alt1.jpg" /></a>
-		<a href="#" class="related-product-image-thumbnails"><img src="http://dyn-images2.hsni.com/is/image/HomeShoppingNetwork/prodthum/sharif-mesh-and-sequins-cougar-tunic-d-20130702151307877~274684_E91.jpg" /></a>
-		<!--<a href="#" class="related-product-image-thumbnails"><img src="http://dyn-images2.hsni.com/is/image/HomeShoppingNetwork/prodthum/clever-carriage-paris-lace-and-leather-bangle-d-2013042315295494~254439_80M.jpg" /></a>-->
+	<div class="product-info">
+		<div class="product-description">
+			<h3>Jessica Simpson Jessica Simpson "Eclair" Strappy Suede Platform Pump</h3>
+			<p class="price">$89.00 <span class="strike-through">$110.00</span></p>
+			<p class="flex-pay">or 3 FlexPays of <span class="bold">$29.67</span></p>
+			<p class="shipping">Free Shipping</p>
+		</div>
+		<div class="related-products">
+			<a href="#" class="related-product-image-thumbnails"><img src="http://dyn-images2.hsni.com/is/image/HomeShoppingNetwork/prodthum/jessica-simpson-waleo-suede-platform-pump-d-00010101000000~215029_alt2.jpg" /></a>
+			<a href="#" class="related-product-image-thumbnails"><img src="http://dyn-images2.hsni.com/is/image/HomeShoppingNetwork/prodthum/jessica-simpson-celin-studded-leather-platform-sandal-d-2012120412073732~200079_334.jpg" /></a>
+			<a href="#" class="related-product-image-thumbnails"><img src="http://dyn-images2.hsni.com/is/image/HomeShoppingNetwork/prodthum/jessica-simpson-waleo-suede-platform-pump-d-2012120412073732~215029_502.jpg" /></a>
+			<a href="#" class="related-product-image-thumbnails"><img src="http://dyn-images2.hsni.com/is/image/HomeShoppingNetwork/prodthum/echo-metallic-floppy-brim-hat-d-20130404121308777~246912_040.jpg" /></a>
+			<a href="#" class="related-product-image-thumbnails"><img src="http://dyn-images.hsni.com/is/image/HomeShoppingNetwork/prodthum/twiggy-london-woven-tribal-fedora-d-20130322173335487~242826_304.jpg" /></a>
+			<a href="#" class="related-product-image-thumbnails"><img src="http://dyn-images.hsni.com/is/image/HomeShoppingNetwork/prodthum/twiggy-london-spring-sneaker-with-leather-toe-cap-d-20130213170437897~231563.jpg" /></a>
+			<a href="#" class="related-product-image-thumbnails"><img src="http://dyn-images.hsni.com/is/image/HomeShoppingNetwork/prodthum/clever-carriage-hamptons-pom-pom-scarf-d-00010101000000~278723_alt1.jpg" /></a>
+			<a href="#" class="related-product-image-thumbnails"><img src="http://dyn-images2.hsni.com/is/image/HomeShoppingNetwork/prodthum/sharif-mesh-and-sequins-cougar-tunic-d-20130702151307877~274684_E91.jpg" /></a>
+			<a href="#" class="related-product-image-thumbnails"><img src="http://dyn-images2.hsni.com/is/image/HomeShoppingNetwork/prodthum/clever-carriage-paris-lace-and-leather-bangle-d-2013042315295494~254439_80M.jpg" /></a>
+		</div>
 	</div>
 </div>
 
