@@ -46,13 +46,15 @@
 	appBrowsing = function(){
 		this.realtime();
 		this.hangoutUrl = "https://hangoutsapi.talkgadget.google.com/hangouts?authuser=0&gid=385760598548";
-		$(document).ready($.proxy(this.DOMEvents, this));
+		this.DOMEvents();
+		//$(document).ready($.proxy(this.DOMEvents, this));
 	};
 
 	appBrowsing.prototype = {
 		realtime: function(){
 			this.socket = io.connect("http://ec2-54-221-12-81.compute-1.amazonaws.com:80");
 			this.socket.on("hangoutReady", function(data){
+				alert("ready");
 				window.localStorage.setItem("hangoutOpen", true);
 			});
 		},

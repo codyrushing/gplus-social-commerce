@@ -34,6 +34,7 @@ module.exports = {
 			});
 
 			socket.on("addProductToHangout", function(data){
+				console.log("adding product ot hangout " + data);
 				socket.broadcast.emit("addProduct", data);
 			});
 

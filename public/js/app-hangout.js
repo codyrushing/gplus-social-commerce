@@ -45,7 +45,7 @@ gadgets.util.registerOnLoadHandler(init);
   appHangout.prototype = {
     realtime: function(){
       var me = this;
-      this.socket = io.connect("http://ec2-23-22-44-238.compute-1.amazonaws.com:80");
+      this.socket = io.connect("http://ec2-54-221-12-81.compute-1.amazonaws.com:80");
       this.socket.on("serverEventTest", function(data){
         console.log(data.payload);
       });
